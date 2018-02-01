@@ -1,0 +1,17 @@
+<HTML>
+    <HEAD>
+        <TITLE>A simple HTML Document</TITLE>
+    </HEAD>
+    <BODY>
+        <h1 id="miH1">Texto</h1>
+        <script>
+        function suma (operador1, operador2){
+         var resultado = operador1+operador2;
+         var campo = document.getElementById("miH1");
+         campo.textContent="La suma es "
+         + resultado;
+        }
+        suma(2,6);
+        </script>
+    </BODY>
+</HTML>

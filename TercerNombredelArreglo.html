@@ -1,0 +1,22 @@
+<HTML>
+    <HEAD>
+        <TITLE>A simple HTML Document</TITLE>
+    </HEAD>
+
+    <BODY>
+        <p id="msg"></p>
+
+        <script>
+        var nombres = new Array();
+      
+        nombres[0]="Ana";
+        nombres[1]="Juana";
+        nombres[2]="Rocio";
+        nombres[3]="Petra";
+        var objeto = document.getElementById("msg");
+        objeto.textContent="El tercer nombre es " +
+              nombres[2];
+
+        </script>
+    </BODY>
+</HTML>

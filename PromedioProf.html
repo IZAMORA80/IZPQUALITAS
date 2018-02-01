@@ -1,0 +1,26 @@
+<HTML>
+    <HEAD>
+        <TITLE>A simple HTML Document</TITLE>
+    </HEAD>
+
+    <BODY>
+        <p id="msg"></p>
+
+        <script>
+        var calificaciones;
+        calificaciones=[0,0,0];
+      
+        calificaciones[0]=prompt("Calificacion");
+        calificaciones[1]=prompt("Calificacion");
+        calificaciones[2]=prompt("Calificacion");
+        calificaciones[3]=prompt("Calificacion");
+        
+        var total=0;
+        for(var i=0; i<calificaciones.length;i++){
+        total+=parseInt(calificaciones[i]);
+        }
+        var objeto = document.getElementById("msg") ;
+        objeto.textContent ="El Promedio es " + total/calificaciones.length ;
+        </script>
+    </BODY>
+</HTML>

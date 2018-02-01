@@ -1,0 +1,25 @@
+<HTML>
+    <HEAD>
+        <TITLE>A simple HTML Document</TITLE>
+    </HEAD>
+<script>
+function p(){
+var num1 = parseFloat(document.getElementById('n1').value);
+var num2 =parseFloat(document.getElementById('n2').value);
+var num3 = parseFloat(document.getElementById('n3').value);
+var pro =(num1+num2+num3)/3;
+if(!isNaN(pro))
+document.getElementById('promedio').innerHTML = pro.toFixed(2);
+}
+</script>
+</head>
+<body>
+<form action="#">
+    <input type="text" value="" id="n1" onkeyup="p();">
+    <input type="text" value="" id="n2" onkeyup="p();">
+    <input type="text" value="" id="n3" onkeyup="p();">
+</form>
+<div id="promedio">
+</div>
+</body>
+</HTML>

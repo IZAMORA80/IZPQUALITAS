@@ -1,0 +1,22 @@
+<HTML>
+    <HEAD>
+        <TITLE>A simple HTML Document</TITLE>
+    </HEAD>
+    <BODY>
+        <h1 id="miH1">Texto</h1>
+        <h2 id="miH2">Texto</h2>
+        <script>
+        function suma (operador1,operador2,operador3){
+         var resultado = operador1 * operador2;
+         var resultado2 = operador3*operador3*operador3;
+         var campo = document.getElementById("miH1");
+         var campo1 = document.getElementById("miH2");
+         campo.textContent="El area es "
+         + resultado;
+         campo1.textContent="El volumen del Cubo es "
+         + resultado2;
+        }
+        suma(8,9,5);
+        </script>
+    </BODY>
+</HTML>

@@ -1,0 +1,22 @@
+<HTML>
+    <HEAD>
+        <TITLE>A simple HTML Document</TITLE>
+        ...
+    </HEAD>
+
+    <BODY>
+        <p id="msg">WELCOME Back</p>
+
+        <script>
+        var fecha = new Date();
+        var hora = fecha.getHours();
+        var objeto = document.getElementById("msg");
+        if (hora > 12){
+          objeto.textContent="Buenas tardes";
+        }else{
+          objeto.textContent="Buenos Dias";
+        }
+
+        </script>
+    </BODY>
+</HTML>

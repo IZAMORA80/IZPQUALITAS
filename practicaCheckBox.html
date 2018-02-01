@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <meta charset="utf-8"/>
+  </head>
+  <body ng-app>
+   <div>Disponible
+       <input type="checkbox" ng-model="myVar">
+    </div>
+    <div>
+        <img src="enferma.jpg" ng-hide="myVar">
+    </div>
+    <div>
+        <img src="lista.jpg" ng-hide="!myVar">
+    </div>
+    <script></script>
+  </body>
+</html>

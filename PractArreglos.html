@@ -1,0 +1,43 @@
+<html>
+
+    <body>
+       <div id="contenido"></div>
+        <script>
+        var total=0, maximo=0, moda=0;
+        var calificaciones = [9,8,9,6,7,8,5,7,8,7,5];
+        var minimo = calificaciones[0];
+        var nombres = ["Ana","Carlos","Ricardo","Pedro","Soledad","Ramiro","Juan","Jose","Ramses","Laura","Sandra"];  
+        var cadena = "<table>"
+        +"<tr><td>Calificacion</td>"
+        +"<td>Nombre</td>"
+        +"<tr>";
+        for (var i=0;i<calificaciones.length;i++){
+        cadena+="<tr>"
+        +"<td>"+calificaciones[i]+"</td>"
+        +"<td>"+nombres[i]+"</td>"
+        +"</tr>";
+        total+=calificaciones[i];
+        if (calificaciones[i]>maximo){
+        maximo=calificaciones[i];
+        }
+        if (calificaciones[i]<maximo){
+        minimo=calificaciones[i];
+        }
+
+     }
+        cadena+="</table>"
+        cadena+="Promedio :" + (total/calificaciones.length) + " "
+        cadena+="Mejor calificacion :" + maximo + " "
+        cadena+="Peor calificacion :" + minimo;
+
+        var elementDiv =  document.getElementById("contenido");
+        elementDiv.innerHTML=cadena;
+ 
+       </script>
+
+
+</body>
+</html>
+
+
+
